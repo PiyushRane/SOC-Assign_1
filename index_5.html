@@ -1,0 +1,28 @@
+    <html>
+    <head>
+        <title>Assignment1.4</title>
+        <h1>My First sub-window</h1>
+    </head>
+    <script>
+        function go()
+        {
+            var data = document.getElementById("t").value;
+            document.getElementById("f").src = data;
+        }
+        function res()
+        {
+            document.getElementById("f").style.height = document.getElementById("h").value;
+            document.getElementById("f").style.width = document.getElementById("w").value;
+        }
+    </script>
+    <bodd>
+            URL<input type = "text" id = "t"><br>
+            <input type ="button" onclick = "go()" value = "GO"><br>
+            <div>
+                Height<input type = "text" id = "h" >
+                Width<input type = "text" id = "w"><br>
+                <input type="button" value = "Change Resolution" onclick="res()"><br>
+            </div>
+            <iframe src="" style = "height:80%;width:80%" name= "frame" id = "f"></iframe><br>
+    </body>
+</html>
